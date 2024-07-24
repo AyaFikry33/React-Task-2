@@ -7,8 +7,8 @@ function Theme() {
 
   return (
     <div className="theme">
-        <button className="theme-switcher-btn" onClick={toggleTheme}>
-          {theme === 'light' ? 'Dark' : 'Light'}
+        <button className="theme-switcher" onClick={toggleTheme}>
+            {theme === 'light' ? '🌙 Dark Mode' : '☀️ Light Mode'}
         </button>
     </div>
   );

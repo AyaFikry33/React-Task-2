@@ -1,34 +1,21 @@
-/* General form styling */
-form {
+.search-form {
     display: flex;
-    align-items: center;
-    gap: 10px; /* Space between form elements */
-    margin: 20px 0;
-    margin: 12px
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-/* Input field styling */
 .search-input {
+    width: 35%;
     padding: 10px;
+    font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
-    width: 200px; /* Adjust width as needed */
 }
 
-/* Select field styling */
-form select {
+.filter-select {
+    width: 15%;
     padding: 10px;
+    font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
-    background-color: #fff;
-    cursor: pointer;
-}
-
-/* Optional: Add focus styles for better user experience */
-.search-input:focus, form select:focus {
-    border-color: #007bff; /* Color on focus */
-    outline: none; /* Remove default focus outline */
-    box-shadow: 0 0 3px rgba(0, 123, 255, 0.5); /* Optional shadow effect */
 }

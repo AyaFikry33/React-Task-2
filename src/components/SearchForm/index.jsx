@@ -6,12 +6,12 @@ export default function SearchForm ({value, setValue, filteredValue, setFiltered
     const data = useContext(DataContext)
     const regions = data ? [...new Set(data.map(country => country.region))] : []
     return (
-        <form action="">
+        <form className="search-form">
             <input className="search-input" type="text" value={value} 
             placeholder="Search by name"
             onChange={(event) => setValue(event.target.value)}/>
             
-            <select value={filteredValue}
+            <select value={filteredValue} className="filter-select"
             onChange={(event) => setFilteredValue(event.target.value)}>
                 <option value="">All</option>
                 { regions?.map((region, index) => (

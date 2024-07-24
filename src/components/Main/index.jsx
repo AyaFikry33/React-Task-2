@@ -9,16 +9,6 @@ export default function Main () {
     const [filteredValue, setFilteredValue] = useState('')
     const [filteredData, setFilteredData] = useState([]);
 
-
-//     useEffect(() => {
-//         if (data) {
-//             setFilteredData(
-//                 data.filter((country) =>
-//                     country.name.common.toLowerCase().includes(value.toLowerCase())
-//             )
-//         );
-//     }
-// }, [value])
     useEffect(() => {
         if (data) {
             setFilteredData(data);
