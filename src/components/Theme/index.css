@@ -1,0 +1,25 @@
+.theme {
+    display: flex;
+    justify-content: flex-end;
+}
+.theme-switcher-btn {
+    background: linear-gradient(45deg, #ff6b6b, #f06595); 
+    color: white;
+    border: none;
+    border-radius: 30px; 
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.theme-switcher-btn:hover {
+    background: linear-gradient(45deg, #ff4757, #e056fd);
+    transform: scale(1.05);
+}
+
+.theme-switcher-btn:active {
+    background: linear-gradient(45deg, #c0392b, #8e44ad); 
+    transform: scale(1);
+}

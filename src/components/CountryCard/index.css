@@ -1,0 +1,10 @@
+.country-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 calc((100% - 4*2px) / 5);
+}
