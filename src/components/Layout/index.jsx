@@ -7,7 +7,7 @@ export default function Layout () {
         <DataProvider>
             <Header/>
             <Main/>
-            <footer></footer>
+            <footer>Footer</footer>
         </DataProvider>
     )
 }

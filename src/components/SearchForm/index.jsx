@@ -1,5 +1,4 @@
 import { useContext } from 'react'
-import './index.css'
 import DataContext from '../../Context/DataContext'
 export default function SearchForm ({value, setValue, filteredValue, setFilteredValue}) {
     // const [value, setValue] = useState('')

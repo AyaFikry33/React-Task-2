@@ -1,5 +1,4 @@
 
-import './index.css';
 export default function CountryCard ({country}) {
     return (
         <div className="country-card">

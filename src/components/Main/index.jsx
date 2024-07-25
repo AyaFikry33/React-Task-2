@@ -1,6 +1,5 @@
 import { useContext, useEffect, useState } from "react"
 import DataContext from "../../Context/DataContext"
-import './index.css';
 import CountryCard from "../CountryCard";
 import SearchForm from "../SearchForm";
 export default function Main () {

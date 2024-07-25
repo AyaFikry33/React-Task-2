@@ -1,10 +1,154 @@
 .App {
   text-align: center;
 }
+
 .App.light {
   background-color: white;
+  color: black;
 }
 
 .App.dark {
   background-color: #2b3945;
+  color: white;
+}
+
+.App .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.App.dark .header {
+  background-color: #2b3945;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header h1 {
+  font-size: 24px;
+}
+
+.country-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 0 0 20px 0;
+  width: calc(25% - 50px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App.dark .country-card {
+  background-color: #1d2c3d;
+  border: 1px solid #444;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.country-flag {
+  width: 100%;
+  height: 200px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 11px;
+}
+
+.App.dark .country-flag {
+  border-bottom: 1px solid #444;
+}
+
+.country-details h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.country-details p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.country-details p strong {
+  font-weight: bold;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 35%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.App.dark .search-input {
+  background-color: #1d2c3d;
+  color: white;
+  border: 1px solid #444;
+}
+
+.filter-select {
+  width: 15%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.App.dark .filter-select {
+  background-color: #1d2c3d;
+  color: white;
+  border: 1px solid #444;
+}
+
+.countries-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.container {
+  margin: 15px auto;
+  padding: 20px;
+}
+
+.theme-switcher {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.theme-switcher:focus {
+  outline: none;
+}
+
+.App.dark .country-details {
+  color: white;
+}
+
+.App.dark .search-form {
+  color: white;
+}
+
+.App.dark .countries-container {
+  color: white;
 }
